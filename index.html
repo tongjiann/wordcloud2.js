@@ -37,7 +37,8 @@
         .canvas.hide {
             display: none;
         }
-        #html-canvas{
+
+        #html-canvas {
             height: 100%;
             width: 100%;
         }
@@ -96,10 +97,20 @@
             }
         }
 
+        body::-webkit-scrollbar {
+            height: 0 !important;
+        }
+
+        body {
+            -ms-overflow-style: none; /* IE and Edge */
+            scrollbar-width: none; /* Firefox */
+        }
+
         .container {
             /*width: fit-content;*/
             height: 100%;
             overflow-x: hidden; /* 禁止横向滚动 */
+            overflow-y: hidden; /* 禁止横向滚动 */
             width: 100%;
         }
     </style>
@@ -152,7 +163,7 @@
             <!--          </select>-->
             <!--        </div>-->
         </div>
-        <div class="tabbable">
+        <div class="tabbable hide">
             <ul class="nav nav-tabs">
                 <li class="active"><a href="#tab-list" data-toggle="tab">List</a></li>
                 <li><a href="#tab-config" data-toggle="tab">Configuration</a></li>

@@ -1,7 +1,7 @@
 'use strict';
 
 var examples = {
-    'love': {
+    'zilv': {
         list: (function generateLoveList() {
             var list = ['12 自律', '9 克制', '7 坚持', '6 乐观', '5 忍耐'];
             var nums = [5, 4, 3, 2, 2];
@@ -201,11 +201,9 @@ jQuery(function ($) {
         // devicePixelRatio
         var devicePixelRatio = parseFloat($dppx.val());
 
-        const viewportWidth = window.innerWidth;
-        const viewportHeight = window.innerHeight;
         // Set the width and height
-        var width = $width.val() ? $width.val() : viewportWidth;
-        var height = $height.val() ? $height.val() : viewportHeight;
+        var width = $width.val() ? $width.val() :  window.innerWidth;
+        var height = $height.val() ? $height.val() : window.innerHeight;
         var pixelWidth = width;
         var pixelHeight = height;
 
@@ -379,7 +377,7 @@ jQuery(function ($) {
         !(window.location.hash.substr(1) in examples)) {
         // If the initial hash doesn't match to any of the examples,
         // or it doesn't exist, reset it to #love
-        window.location.replace('#love');
+        window.location.replace('#zilv');
     } else {
         hashChanged();
     }

@@ -27,7 +27,7 @@ var examples = {
             '  weightFactor: function (size) {\n' +
             '    return Math.pow(size, 2.3) * $(\'#canvas\').width() / 1024;\n' +
             '  },\n' +
-            '  fontFamily: \'Times, serif\',\n' +
+            '  fontFamily: \'田英章行书\',\n' +
             '  color: function (word, weight) {\n' +
             '    return (weight === 12) ? \'#f02222\' : \'#c09292\';\n' +
             '  },\n' +

@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B20T1WW3XB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-B20T1WW3XB');
+    </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="canonical" href="https://wordcloud2-js.timdream.org/"/>
-    <title>wordcloud2.js - tag cloud/Wordle presentation on 2D canvas or HTML</title>
+    <title>自律-zilv-self-discipline</title>
     <meta name="description" content="">
     <meta name="author" content="">
-    <!-- Le styles -->
-    <link href="//netdna.bootstrapcdn.com/bootstrap/2.2.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="//netdna.bootstrapcdn.com/bootstrap/2.2.2/css/bootstrap-responsive.min.css" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Finger+Paint" id="link-webfont" rel="stylesheet">
-    <script defer src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <script defer src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.2.2/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script defer src="./src/wordcloud2.js"></script>
     <script defer src="./index.js"></script>
 
     <style>
+
 
         *[hidden] {
             display: none;
@@ -104,6 +110,7 @@
         body {
             -ms-overflow-style: none; /* IE and Edge */
             scrollbar-width: none; /* Firefox */
+            margin: 0;
         }
 
         .container {
@@ -117,34 +124,19 @@
         #form {
             margin: 0;
         }
+
+        .hide {
+            display: none;
+        }
     </style>
-    <!-- Matomo -->
-    <script type="text/javascript">
-        var _paq = window._paq || [];
-        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-        _paq.push(['trackPageView']);
-        _paq.push(['enableLinkTracking']);
-        (function () {
-            var u = "//stats.timdream.org/";
-            _paq.push(['setTrackerUrl', u + 'matomo.php']);
-            _paq.push(['setSiteId', '6']);
-            var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
-            g.type = 'text/javascript';
-            g.async = true;
-            g.defer = true;
-            g.src = u + 'matomo.js';
-            s.parentNode.insertBefore(g, s);
-        })();
-    </script>
-    <!-- End Matomo Code -->
 </head>
 <body>
 <div class="container">
     <form id="form" method="get" action="">
         <div class="row">
             <div class="span12" id="canvas-container">
-                <canvas id="canvas" class="canvas hide"></canvas>
-                <div id="html-canvas" class="canvas"></div>
+                <canvas id="canvas" class="canvas "></canvas>
+                <div id="html-canvas" class="canvas hide"></div>
             </div>
             <div class="hide">
                 <div class="span6">
